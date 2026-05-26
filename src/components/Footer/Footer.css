@@ -1,0 +1,86 @@
+/* mo-storybook — Footer component
+   Source: WDH Design System (Figma node 40001273-2013)
+   Colours: #2a2a2a (top), #1d1d1d (bottom), #dee2e6 (divider), #ffffff (text/icons)
+   Font: FS Emeric Web (falls back to system-ui)
+*/
+
+.mo-footer {
+  width: 100%;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+}
+
+/* ── Top section ─────────────────────────────────────────────── */
+.mo-footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  min-height: 168px;
+  padding: 26px 11%;
+}
+
+.mo-footer__logo {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Legal links */
+.mo-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-left: 1px solid #dee2e6;
+  padding-left: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding-top: 0;
+}
+
+.mo-footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.mo-footer__link:hover {
+  text-decoration: underline;
+}
+
+/* ── Bottom section ──────────────────────────────────────────── */
+.mo-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1d1d1d;
+  min-height: 77px;
+  padding: 0 11%;
+  gap: 12px;
+}
+
+/* Social icons */
+.mo-footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  opacity: 0.5;
+  color: #ffffff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.mo-footer__social-link:hover {
+  opacity: 1;
+}
+
+.mo-footer__social-link svg {
+  width: 35px;
+  height: 35px;
+}
