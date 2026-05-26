@@ -1,0 +1,47 @@
+/* mo-storybook — Button component */
+
+.mo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Sizes */
+.mo-btn--small  { padding: 6px 12px;  font-size: 12px; }
+.mo-btn--medium { padding: 10px 20px; font-size: 14px; }
+.mo-btn--large  { padding: 14px 28px; font-size: 16px; }
+
+/* Primary */
+.mo-btn--primary {
+  background-color: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+.mo-btn--primary:hover:not(:disabled) {
+  background-color: #1558b0;
+  border-color: #1558b0;
+}
+
+/* Secondary */
+.mo-btn--secondary {
+  background-color: transparent;
+  color: #1a73e8;
+  border-color: #1a73e8;
+}
+.mo-btn--secondary:hover:not(:disabled) {
+  background-color: #e8f0fe;
+}
+
+/* Disabled */
+.mo-btn--disabled,
+.mo-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
