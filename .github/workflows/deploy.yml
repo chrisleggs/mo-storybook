@@ -32,6 +32,8 @@ jobs:
 
       - name: Build Storybook
         run: npm run build-storybook -- --output-dir storybook-static
+        env:
+          DEPLOY_TARGET: github-pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

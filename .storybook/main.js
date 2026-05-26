@@ -10,8 +10,11 @@ const config = {
     options: {},
   },
   viteFinal: async (config) => {
-    // Set base path for GitHub Pages project site
-    config.base = '/mo-storybook/';
+    // Only set the base path when deploying to GitHub Pages.
+    // Chromatic (and local dev) serve from root so no base path is needed there.
+    if (process.env.DEPLOY_TARGET === 'github-pages') {
+      config.base = '/mo-storybook/';
+    }
     return config;
   },
 };

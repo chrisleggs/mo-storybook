@@ -11,6 +11,7 @@
     "@storybook/addon-links": "^8.0.0",
     "@storybook/html": "^8.0.0",
     "@storybook/html-vite": "^8.0.0",
+    "chromatic": "^17.0.0",
     "storybook": "^8.0.0"
   }
 }
