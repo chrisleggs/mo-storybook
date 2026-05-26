@@ -1,0 +1,87 @@
+/* mo-storybook — Header component
+   Source: WDH Design System (Figma node 40001273-1643)
+   Colours: #1d1d1d (top bar), #2a2a2a (nav bar), #b9dc0c (active), #f8f9fa (inactive), #e0e0e0 (button)
+   Font: FS Emeric Web (falls back to system-ui)
+*/
+
+.mo-header {
+  width: 100%;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+}
+
+/* ── Top bar ─────────────────────────────────────────────────── */
+.mo-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  height: 80px;
+  padding: 0 5%;
+}
+
+.mo-header__logo {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  text-decoration: none;
+}
+
+.mo-header__logo svg {
+  height: 20px;
+  width: auto;
+}
+
+/* Login/Register button */
+.mo-header__login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+  min-width: 143px;
+  padding: 0 16px;
+  background-color: #e0e0e0;
+  color: #1d1d1d;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.mo-header__login:hover {
+  background-color: #cacaca;
+}
+
+/* ── Nav bar ─────────────────────────────────────────────────── */
+.mo-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  height: 58px;
+  gap: 129px;
+}
+
+.mo-header__nav-link {
+  font-size: 21px;
+  font-weight: 400;
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 16px 0;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.mo-header__nav-link:hover {
+  color: #b9dc0c;
+}
+
+.mo-header__nav-link--active {
+  color: #b9dc0c;
+}
