@@ -4,6 +4,10 @@ export default {
   title: 'Components/Button',
   tags: ['autodocs'],
   render: (args) => createButton(args),
+  parameters: {
+    // Snapshot at mobile, tablet and desktop widths
+    chromatic: { viewports: [375, 768, 1280] },
+  },
   argTypes: {
     label: { control: 'text', description: 'Button label' },
     variant: {

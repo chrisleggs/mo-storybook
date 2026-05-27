@@ -6,6 +6,8 @@ export default {
   render: (args) => createHeader(args),
   parameters: {
     layout: 'fullscreen',
+    // Snapshot at mobile, tablet and desktop — header layout shifts across breakpoints
+    chromatic: { viewports: [375, 768, 1280, 1512] },
   },
   argTypes: {
     navItems: {
@@ -38,7 +40,7 @@ export const Default = {
   },
 };
 
-// Each nav item active
+// Each nav item active — each is a separate VRT baseline
 export const PricingActive = {
   name: 'Pricing & Plans active',
   args: {

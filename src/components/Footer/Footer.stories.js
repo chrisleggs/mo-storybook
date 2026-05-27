@@ -6,6 +6,8 @@ export default {
   render: (args) => createFooter(args),
   parameters: {
     layout: 'fullscreen',
+    // Snapshot at mobile, tablet and desktop — footer layout shifts across breakpoints
+    chromatic: { viewports: [375, 768, 1280, 1512] },
   },
   argTypes: {
     legalLinks: {

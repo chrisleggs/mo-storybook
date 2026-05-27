@@ -1,6 +1,12 @@
 name: Chromatic
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   chromatic:
@@ -24,7 +30,9 @@ jobs:
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
-          # Add CHROMATIC_PROJECT_TOKEN to your GitHub repo secrets:
-          # Settings → Secrets and variables → Actions → New repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          autoAcceptChanges: main # Auto-accept baseline changes on main branch
+          # Auto-accept all changes on main (they become the new baseline)
+          autoAcceptChanges: main
+          # On PRs, fail the workflow if there are unreviewed visual changes.
+          # A team member must approve changes in the Chromatic UI before the PR can merge.
+          exitZeroOnChanges: false
