@@ -1,0 +1,46 @@
+/* mo-storybook — Overview component
+   Source: WDH Capture Claude (Figma node 40001238-1569)
+   Colours: #333333 (heading), #1d1d1d (body)
+   Fonts: FS Emeric Web SemiBold 32px (heading), FS Emeric Web Regular 19px (body)
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-overview-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 128px 40px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Inner container ─────────────────────────────────────────────── */
+.mo-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ── Heading ─────────────────────────────────────────────────────── */
+.mo-overview__title {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: normal;
+  color: #333333;
+  margin: 0;
+}
+
+/* ── Body text ───────────────────────────────────────────────────── */
+.mo-overview__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mo-overview__body p {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  color: #1d1d1d;
+  margin: 0;
+}
