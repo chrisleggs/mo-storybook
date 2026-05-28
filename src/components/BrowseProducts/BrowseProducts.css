@@ -7,12 +7,12 @@
 .mo-browse {
   background-color: #ffffff;
   width: 100%;
-  padding: 51px 128px 55px 150px;
+  padding: 51px 128px 55px 135px;
   box-sizing: border-box;
 }
 
 .mo-browse__inner {
-  padding-left: 36px;
+  padding-left: 0;
 }
 
 /* ── Title ───────────────────────────────────────────────────── */
