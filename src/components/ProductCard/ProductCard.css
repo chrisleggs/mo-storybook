@@ -1,0 +1,132 @@
+/* mo-storybook — ProductCard component
+   Source: WDH Capture Claude (Figma node 40001231-1516)
+   Colours: #333333 (headings/labels), #1d1d1d (body), #0074cc (CTA)
+   Fonts: FS Emeric SemiBold (title/labels), FS Emeric Web Regular (body/CTA)
+*/
+
+/* ── Section wrapper (matches Welcome / BrowseProducts left-alignment) ── */
+.mo-product-card-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 32px 128px 32px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Card shell ──────────────────────────────────────────────────────── */
+.mo-product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  min-height: 368px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ── Thumbnail ───────────────────────────────────────────────────────── */
+.mo-product-card__thumb {
+  width: 299px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.mo-product-card__image {
+  width: 251px;
+  height: 251px;
+  object-fit: cover;
+  display: block;
+}
+
+.mo-product-card__image--placeholder {
+  width: 251px;
+  height: 251px;
+  background-color: #e9ecef;
+  border-radius: 2px;
+}
+
+/* ── Content area ────────────────────────────────────────────────────── */
+.mo-product-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 24px 24px 24px;
+  min-width: 0;
+}
+
+/* ── Title ───────────────────────────────────────────────────────────── */
+.mo-product-card__title {
+  font-family: 'FS Emeric', 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  color: #333333;
+  margin: 0 0 12px;
+}
+
+/* ── Description ─────────────────────────────────────────────────────── */
+.mo-product-card__desc {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  color: #1d1d1d;
+  margin: 0 0 24px;
+}
+
+/* ── Attributes ──────────────────────────────────────────────────────── */
+.mo-product-card__attributes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.mo-product-card__attribute {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-size: 19px;
+  line-height: normal;
+  color: #1d1d1d;
+  margin: 0 0 4px;
+}
+
+.mo-product-card__attribute:last-child {
+  margin-bottom: 0;
+}
+
+.mo-product-card__attribute-label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.mo-product-card__attribute-value {
+  font-weight: 400;
+}
+
+/* ── CTA button ──────────────────────────────────────────────────────── */
+.mo-product-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0074cc;
+  color: #ffffff;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  border: none;
+  border-radius: 5px;
+  height: 44px;
+  padding: 0 20px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: flex-start;
+}
