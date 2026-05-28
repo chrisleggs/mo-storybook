@@ -1,0 +1,37 @@
+/* mo-storybook — BackLink component
+   Source: WDH Capture Claude (Figma node 40001231-1542)
+   Colour: #0074cc (link)
+   Font:   FS Emeric Web Regular, 19px
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-back-link-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 16px 0 16px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Link ────────────────────────────────────────────────────────── */
+.mo-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #0074cc;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  padding: 3px 0 1px;
+}
+
+.mo-back-link:hover .mo-back-link__label {
+  text-decoration: underline;
+}
+
+/* ── Chevron icon ────────────────────────────────────────────────── */
+.mo-back-link__icon {
+  display: block;
+  flex-shrink: 0;
+}
