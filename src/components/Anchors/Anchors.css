@@ -1,0 +1,39 @@
+/* mo-storybook — Anchors component
+   Source: WDH Capture Claude (Figma node 40001232-1556)
+   Colour: #333333 (text)
+   Font:   FS Emeric SemiBold, 24px
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-anchors-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px 0 24px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Anchor nav ──────────────────────────────────────────────────── */
+.mo-anchors {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+/* ── Individual anchor link ──────────────────────────────────────── */
+.mo-anchors__link {
+  font-family: 'FS Emeric', 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  color: #333333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mo-anchors__link:hover,
+.mo-anchors__link:active {
+  color: #0074cc;
+  text-decoration: underline;
+}
