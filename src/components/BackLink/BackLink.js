@@ -19,13 +19,13 @@ export const createBackLink = ({
   link.className = 'mo-back-link';
   link.href = href;
 
-  // Inline SVG chevron — left-pointing, 5×10px, matches Figma icon
+  // Inline SVG chevron — left-pointing, scaled to match 19px text height
   const svgNS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(svgNS, 'svg');
   svg.setAttribute('class', 'mo-back-link__icon');
   svg.setAttribute('xmlns', svgNS);
-  svg.setAttribute('width', '5');
-  svg.setAttribute('height', '10');
+  svg.setAttribute('width', '10');
+  svg.setAttribute('height', '19');
   svg.setAttribute('viewBox', '0 0 5 10');
   svg.setAttribute('aria-hidden', 'true');
   svg.setAttribute('focusable', 'false');
