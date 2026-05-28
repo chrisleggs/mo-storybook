@@ -1,0 +1,56 @@
+/* mo-storybook — Welcome component
+   Source: WDH Capture Claude (Figma node 40001229-1536)
+   Colours: #333333 (heading), #1d1d1d (body)
+   Fonts: FS Emeric SemiBold (heading), FS Emeric Web Regular (body)
+*/
+
+.mo-welcome {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 59px 135px 64px;
+  box-sizing: border-box;
+}
+
+.mo-welcome__inner {
+  max-width: 1189px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mo-welcome__title {
+  font-family: 'FS Emeric', 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: normal;
+  color: #333333;
+  margin: 0;
+  max-width: 715px;
+}
+
+.mo-welcome__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mo-welcome__body p {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  color: #1d1d1d;
+  margin: 0 0 1em;
+  max-width: 1111px;
+}
+
+.mo-welcome__body p:last-child {
+  margin-bottom: 0;
+}
+
+.mo-welcome__divider {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 0;
+  width: 100%;
+}
