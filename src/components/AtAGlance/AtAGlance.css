@@ -1,0 +1,84 @@
+/* mo-storybook — AtAGlance component
+   Source: WDH Capture Claude (Figma node 40001238-1575)
+   Colours: #333333 (labels/heading), #1d1d1d (values), #0074cc (links), #ced4da (borders)
+   Fonts: FS Emeric Web SemiBold 32px (heading), SemiBold/Regular 19px (table)
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-at-a-glance-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 128px 40px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Inner container ─────────────────────────────────────────────── */
+.mo-at-a-glance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ── Heading ─────────────────────────────────────────────────────── */
+.mo-at-a-glance__title {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: normal;
+  color: #333333;
+  margin: 0;
+}
+
+/* ── Table (definition list) ─────────────────────────────────────── */
+.mo-at-a-glance__table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Row ─────────────────────────────────────────────────────────── */
+.mo-at-a-glance__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 51px;
+  border-bottom: 1px solid #ced4da;
+}
+
+/* ── Label ───────────────────────────────────────────────────────── */
+.mo-at-a-glance__label {
+  flex: 0 0 19.23%;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: normal;
+  color: #333333;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+/* ── Value ───────────────────────────────────────────────────────── */
+.mo-at-a-glance__value {
+  flex: 1;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  color: #1d1d1d;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+/* ── Link value ──────────────────────────────────────────────────── */
+.mo-at-a-glance__link {
+  color: #0074cc;
+  text-decoration: underline;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+}
+
+.mo-at-a-glance__link:hover {
+  color: #005ea8;
+}
