@@ -24,8 +24,8 @@ export const createBackLink = ({
   const svg = document.createElementNS(svgNS, 'svg');
   svg.setAttribute('class', 'mo-back-link__icon');
   svg.setAttribute('xmlns', svgNS);
-  svg.setAttribute('width', '10');
-  svg.setAttribute('height', '19');
+  svg.setAttribute('width', '7');
+  svg.setAttribute('height', '13');
   svg.setAttribute('viewBox', '0 0 5 10');
   svg.setAttribute('aria-hidden', 'true');
   svg.setAttribute('focusable', 'false');
