@@ -1,0 +1,89 @@
+/* mo-storybook — UsageExamples component
+   Source: WDH Capture Claude (Figma node 40001239-1637)
+   Colours: #000000 (headings), #0074cc (links)
+   Fonts: FS Emeric Web SemiBold 30px (title), SemiBold 18px (section heads), Regular 16px (items)
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-usage-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 128px 40px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Inner container ─────────────────────────────────────────────── */
+.mo-usage {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ── Page heading ────────────────────────────────────────────────── */
+.mo-usage__title {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: normal;
+  color: #000000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── Content area ────────────────────────────────────────────────── */
+.mo-usage__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Section group ───────────────────────────────────────────────── */
+.mo-usage__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Section sub-heading ─────────────────────────────────────────── */
+.mo-usage__group-heading {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+  margin: 0;
+}
+
+/* ── Bulleted list ───────────────────────────────────────────────── */
+.mo-usage__list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mo-usage__list li {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+}
+
+/* ── Links ───────────────────────────────────────────────────────── */
+.mo-usage__link {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #0074cc;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.mo-usage__link:hover {
+  color: #005ea8;
+}
