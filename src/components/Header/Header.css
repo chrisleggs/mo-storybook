@@ -52,7 +52,13 @@
 }
 
 .mo-header__login:hover {
-  background-color: #cacaca;
+  background-color: #0074cc;
+  color: #ffffff;
+}
+
+.mo-header__login:active {
+  background-color: #0074cc;
+  color: #ffffff;
 }
 
 /* ── Nav bar ─────────────────────────────────────────────────── */

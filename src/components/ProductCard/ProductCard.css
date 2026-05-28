@@ -110,3 +110,8 @@
   font-weight: 400;
 }
 
+/* ── CTA — constrain button to its natural size inside the flex column ── */
+.mo-product-card__content .mo-button {
+  align-self: flex-start;
+}
+
