@@ -1,4 +1,5 @@
 import './ProductCard.css';
+import '../Button/Button.css';
 
 /**
  * Creates a Product Card element.
@@ -93,7 +94,7 @@ export const createProductCard = ({
 
   // CTA
   const ctaEl = document.createElement('a');
-  ctaEl.className = 'mo-product-card__cta';
+  ctaEl.className = 'mo-button';
   ctaEl.textContent = ctaLabel;
   ctaEl.href = ctaHref;
   content.appendChild(ctaEl);
