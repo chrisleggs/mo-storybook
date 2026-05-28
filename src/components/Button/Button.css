@@ -1,47 +1,59 @@
-/* mo-storybook — Button component */
+/* mo-storybook — Button component
+   Source: WDH Capture Claude (Figma node 40001235-1564)
+   Colour: #0074cc (primary), #ffffff (text)
+   Font:   FS Emeric Web Regular, 19px
+*/
 
-.mo-btn {
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-button-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px 0 24px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Button base ─────────────────────────────────────────────────── */
+.mo-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid transparent;
-  border-radius: 6px;
+  height: 44px;
+  min-width: 143px;
+  padding: 0 20px;
+  background-color: #0074cc;
+  color: #ffffff;
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: normal;
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-family: system-ui, sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-/* Sizes */
-.mo-btn--small  { padding: 6px 12px;  font-size: 12px; }
-.mo-btn--medium { padding: 10px 20px; font-size: 14px; }
-.mo-btn--large  { padding: 14px 28px; font-size: 16px; }
-
-/* Primary */
-.mo-btn--primary {
-  background-color: #1a73e8;
-  color: #fff;
-  border-color: #1a73e8;
-}
-.mo-btn--primary:hover:not(:disabled) {
-  background-color: #1558b0;
-  border-color: #1558b0;
+/* ── Hover state ─────────────────────────────────────────────────── */
+.mo-button:hover:not(:disabled):not(.mo-button--disabled) {
+  background-color: #005ea8;
 }
 
-/* Secondary */
-.mo-btn--secondary {
-  background-color: transparent;
-  color: #1a73e8;
-  border-color: #1a73e8;
-}
-.mo-btn--secondary:hover:not(:disabled) {
-  background-color: #e8f0fe;
+/* ── Active / click state ────────────────────────────────────────── */
+.mo-button:active:not(:disabled):not(.mo-button--disabled) {
+  background-color: #004f8f;
 }
 
-/* Disabled */
-.mo-btn--disabled,
-.mo-btn:disabled {
-  opacity: 0.45;
+/* ── Focus state (accessibility) ─────────────────────────────────── */
+.mo-button:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+/* ── Disabled state ──────────────────────────────────────────────── */
+.mo-button:disabled,
+.mo-button--disabled {
+  background-color: #b3d4ef;
   cursor: not-allowed;
+  pointer-events: none;
 }

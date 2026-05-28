@@ -5,66 +5,59 @@ export default {
   tags: ['autodocs'],
   render: (args) => createButton(args),
   parameters: {
-    // Snapshot at mobile, tablet and desktop widths
-    chromatic: { viewports: [375, 768, 1280] },
+    layout: 'fullscreen',
+    chromatic: { viewports: [375, 768, 1280, 1512] },
   },
   argTypes: {
-    label: { control: 'text', description: 'Button label' },
-    variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary'],
-      description: 'Visual style',
+    label: {
+      control: 'text',
+      description: 'Button label',
     },
-    size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
-      description: 'Button size',
+    href: {
+      control: 'text',
+      description: 'Optional URL — renders as a link instead of a button',
     },
-    disabled: { control: 'boolean', description: 'Disables the button' },
+    disabled: {
+      control: 'boolean',
+      description: 'Disables the button',
+    },
   },
 };
 
-export const Primary = {
+// Default — matches the Figma design exactly
+export const Default = {
   args: {
-    label: 'Primary Button',
-    variant: 'primary',
-    size: 'medium',
+    label: 'New order',
+    href: '',
     disabled: false,
   },
 };
 
-export const Secondary = {
+// Custom label
+export const CustomLabel = {
+  name: 'Custom label',
   args: {
-    label: 'Secondary Button',
-    variant: 'secondary',
-    size: 'medium',
+    label: 'Find out more',
+    href: '',
     disabled: false,
   },
 };
 
-export const Small = {
+// As a link
+export const AsLink = {
+  name: 'As a link',
   args: {
-    label: 'Small Button',
-    variant: 'primary',
-    size: 'small',
+    label: 'Find out more',
+    href: '#',
     disabled: false,
   },
 };
 
-export const Large = {
-  args: {
-    label: 'Large Button',
-    variant: 'primary',
-    size: 'large',
-    disabled: false,
-  },
-};
-
+// Disabled
 export const Disabled = {
   args: {
-    label: 'Disabled Button',
-    variant: 'primary',
-    size: 'medium',
+    label: 'New order',
+    href: '',
     disabled: true,
   },
 };
