@@ -1,0 +1,70 @@
+/* mo-storybook — BrowseProducts component
+   Source: WDH Capture Claude (Figma node 40001230-1928)
+   Colours: #333333 (headings), #1d1d1d (body), #ced4da (HR)
+   Fonts: FS Emeric SemiBold (headings), FS Emeric Web Regular (body)
+*/
+
+.mo-browse {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 51px 128px 55px 150px;
+  box-sizing: border-box;
+}
+
+.mo-browse__inner {
+  padding-left: 36px;
+}
+
+/* ── Title ───────────────────────────────────────────────────── */
+.mo-browse__title {
+  font-family: 'FS Emeric', 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: normal;
+  color: #333333;
+  margin: 0 0 16px;
+}
+
+/* ── Divider ─────────────────────────────────────────────────── */
+.mo-browse__divider {
+  border: none;
+  border-top: 1px solid #ced4da;
+  margin: 0 0 14px;
+  width: 100%;
+}
+
+/* ── Results count ───────────────────────────────────────────── */
+.mo-browse__count {
+  font-family: 'FS Emeric', 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 0 16px;
+}
+
+/* ── Category items ──────────────────────────────────────────── */
+.mo-browse__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 8px;
+}
+
+.mo-browse__category-name {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: normal;
+  color: #333333;
+  margin: 0 0 10px;
+}
+
+.mo-browse__category-desc {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin: 0;
+}
