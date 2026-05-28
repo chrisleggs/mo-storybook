@@ -1,0 +1,69 @@
+/* mo-storybook — DownloadSampleData component
+   Source: WDH Capture Claude (Figma node 40001239-1631)
+   Colours: #000000 (heading), #1d1d1d (body), #0074cc (link)
+   Fonts: FS Emeric Web SemiBold 30px (heading), Regular 16px (body)
+*/
+
+/* ── Section wrapper (matches left-alignment of other components) ─── */
+.mo-download-section {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 128px 40px 135px;
+  box-sizing: border-box;
+}
+
+/* ── Inner container ─────────────────────────────────────────────── */
+.mo-download {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ── Heading ─────────────────────────────────────────────────────── */
+.mo-download__title {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: normal;
+  color: #000000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── Body content ────────────────────────────────────────────────── */
+.mo-download__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mo-download__body p {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+/* ── Download links ──────────────────────────────────────────────── */
+.mo-download__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mo-download__link {
+  font-family: 'FS Emeric Web', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #0074cc;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  cursor: pointer;
+}
+
+.mo-download__link:hover {
+  color: #005ea8;
+}
