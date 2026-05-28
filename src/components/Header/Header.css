@@ -59,10 +59,12 @@
 .mo-header__nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #2a2a2a;
   height: 58px;
   gap: 129px;
+  padding: 0 135px;
+  box-sizing: border-box;
 }
 
 .mo-header__nav-link {
