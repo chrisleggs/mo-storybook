@@ -4,7 +4,8 @@ const config = {
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-links',
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
+    '@storybook/experimental-addon-test',
   ],
   framework: {
     name: '@storybook/html-vite',
