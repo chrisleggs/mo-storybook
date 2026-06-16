@@ -18,6 +18,7 @@ export const createWelcome = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-welcome';
+  section.setAttribute('aria-label', 'Welcome');
 
   const inner = document.createElement('div');
   inner.className = 'mo-welcome__inner';

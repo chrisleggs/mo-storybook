@@ -17,6 +17,7 @@ export const createOverview = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-overview-section';
+  section.setAttribute('aria-label', 'Overview');
 
   const container = document.createElement('div');
   container.className = 'mo-overview';

@@ -16,6 +16,7 @@ export const createButton = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-button-section';
+  section.setAttribute('aria-label', 'Button');
 
   let btn;
 

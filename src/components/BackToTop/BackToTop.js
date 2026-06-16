@@ -15,6 +15,7 @@ export const createBackToTop = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-back-to-top-section';
+  section.setAttribute('aria-label', 'Back to top');
 
   // Use <a> when an href is supplied, otherwise <button>
   const el = document.createElement(href ? 'a' : 'button');

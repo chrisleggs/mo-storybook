@@ -22,6 +22,7 @@ export const createBrowseProducts = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-browse';
+  section.setAttribute('aria-label', 'Browse products');
 
   const inner = document.createElement('div');
   inner.className = 'mo-browse__inner';

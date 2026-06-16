@@ -24,6 +24,7 @@ export const createDownloadSampleData = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-download-section';
+  section.setAttribute('aria-label', 'Download sample data');
 
   const container = document.createElement('div');
   container.className = 'mo-download';

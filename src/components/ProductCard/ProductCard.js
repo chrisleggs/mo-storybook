@@ -29,6 +29,7 @@ export const createProductCard = ({
   // Section wrapper — keeps left edge aligned with Welcome / BrowseProducts
   const section = document.createElement('section');
   section.className = 'mo-product-card-section';
+  section.setAttribute('aria-label', 'Product card');
 
   const card = document.createElement('div');
   card.className = 'mo-product-card';

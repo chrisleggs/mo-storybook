@@ -14,6 +14,7 @@ export const createBackLink = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-back-link-section';
+  section.setAttribute('aria-label', 'Back link');
 
   const link = document.createElement('a');
   link.className = 'mo-back-link';

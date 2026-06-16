@@ -38,6 +38,7 @@ export const createUsageExamples = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-usage-section';
+  section.setAttribute('aria-label', 'Usage examples');
 
   const container = document.createElement('div');
   container.className = 'mo-usage';

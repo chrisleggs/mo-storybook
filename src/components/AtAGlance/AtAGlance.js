@@ -40,6 +40,7 @@ export const createAtAGlance = ({
 } = {}) => {
   const section = document.createElement('section');
   section.className = 'mo-at-a-glance-section';
+  section.setAttribute('aria-label', 'At a glance');
 
   const container = document.createElement('div');
   container.className = 'mo-at-a-glance';
