@@ -31,6 +31,11 @@ const preview = {
             'best-practice',
           ],
         },
+        // Belt-and-braces: also pass region disable in options.rules
+        // in case the addon version processes options rather than config.
+        rules: {
+          region: { enabled: false },
+        },
       },
     },
     controls: {
