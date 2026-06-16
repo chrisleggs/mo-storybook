@@ -65,7 +65,7 @@ export const createHeader = ({
     if (label === activeItem) link.classList.add('mo-header__nav-link--active');
     link.href = '#';
     link.textContent = label;
-    link.setAttribute('aria-current', label === activeItem ? 'page' : undefined);
+    if (label === activeItem) link.setAttribute('aria-current', 'page');
     nav.appendChild(link);
   });
 

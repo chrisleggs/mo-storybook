@@ -33,10 +33,14 @@
   font-family: 'FS Emeric Web', system-ui, sans-serif;
 }
 
-.mo-back-to-top:hover,
+.mo-back-to-top:hover {
+  background-color: #0074cc;
+}
+
 .mo-back-to-top:focus-visible {
   background-color: #0074cc;
-  outline: none;
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
 }
 
 /* ── Icon ───────────────────────────────────────────────────────── */
