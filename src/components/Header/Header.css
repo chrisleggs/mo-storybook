@@ -93,3 +93,26 @@
 .mo-header__nav-link--active {
   color: #b9dc0c;
 }
+
+/* ── Responsive nav ─────────────────────────────────────────── */
+/* At ≤900px reduce the generous desktop gap/padding so nav links  */
+/* stay inside the dark background at tablet viewports.            */
+@media (max-width: 900px) {
+  .mo-header__nav {
+    padding: 0 40px;
+    gap: 48px;
+  }
+}
+
+/* At ≤600px (covers Chromatic's 375px snapshot) scale down further */
+/* and reduce font size so all four links fit without overflowing.  */
+@media (max-width: 600px) {
+  .mo-header__nav {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .mo-header__nav-link {
+    font-size: 16px;
+  }
+}
