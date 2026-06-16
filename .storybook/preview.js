@@ -2,6 +2,18 @@
 const preview = {
   parameters: {
     a11y: {
+      config: {
+        rules: [
+          {
+            // The region rule requires all content to be inside a landmark.
+            // This is a page-level concern — not applicable to individual
+            // component stories in Storybook (Chromatic also disables it
+            // by default for the same reason).
+            id: 'region',
+            enabled: false,
+          },
+        ],
+      },
       options: {
         // Scroll elements into view before measuring contrast so axe-core
         // can resolve background colours that are obscured by Storybook's
